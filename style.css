@@ -7,6 +7,9 @@
 body {
 background-image: linear-gradient(#b2dafd, #eaf4fe);
 height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 header {
@@ -54,4 +57,31 @@ font-weight: 100;
   color: #2d3639;
 
   
+}
+
+a svg {
+color: #1bb7ff;
+
+}
+
+main {
+padding: 70px;
+display: flex;
+font-family: 'gameovercre', sans-serif;
+font-style: normal;
+color: #2d3639;
+align-items: center;
+justify-content: space-around;
+}
+
+main div {
+padding-left: 70px;
+padding-right: 70px;
+width: 30%;
+
+}
+
+main div h3 {
+color: #1bb7ff;
+margin-bottom: 10px;
 }
