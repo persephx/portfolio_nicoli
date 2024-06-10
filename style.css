@@ -1,4 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/gameovercre');
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +16,7 @@ width: 94%;
 display: flex;
 flex-direction: column;
 align-items: center;
-font-family: 'gameovercre', sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-style: normal;
 color: #2d3639;
 padding: 25px;
@@ -25,7 +24,7 @@ gap: 10px;
 }
 
 header h2 {
-  font-weight: 100;
+  font-weight: 300;
   color: white;
 }
 
@@ -49,7 +48,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 5px;
-font-weight: 100;
+font-weight: 500;
 }
 
 .contacts label a {
@@ -78,10 +77,85 @@ main div {
 padding-left: 70px;
 padding-right: 70px;
 width: 30%;
-
 }
 
 main div h3 {
 color: #1bb7ff;
 margin-bottom: 10px;
+}
+
+nav{
+  display: flex;
+  gap: 55px;
+  margin-top: 15px;
+}
+
+
+
+button {
+  font-size: 18px;
+  color: #2d3639;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #2d3639;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -5px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #1bb7ff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.active {
+  font-size: 18px;
+  color: #2d3639;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+
+.active::after {
+  content: "";
+  pointer-events: none;
+  bottom: -5px;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1bb7ff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
