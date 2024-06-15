@@ -5,7 +5,7 @@
 
 body {
 background-image: linear-gradient(#b2dafd, #eaf4fe);
-height: 100vh;
+height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -69,7 +69,8 @@ display: flex;
 font-family: 'gameovercre', sans-serif;
 font-style: normal;
 color: #2d3639;
-align-items: center;
+width: 60%;
+align-items: start;
 justify-content: space-around;
 }
 
@@ -78,10 +79,8 @@ padding-left: 70px;
 padding-right: 70px;
 width: 30%;
 }
- h3 {
-color: #1bb7ff;
-margin-bottom: 10px;
-}
+
+
 
 nav{
   display: flex;
@@ -157,4 +156,136 @@ button:after {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
+}
+
+
+.conteudo {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  align-items:center;
+}
+
+.conteudo header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.conteudo header img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.conteudo section {
+  margin-bottom: 30px;
+}
+
+.conteudo article {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.conteudo article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.conteudo article p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.conteudo article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.conteudo article table th,
+.conteudo article table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.conteudo article table th {
+  background-color: #f2f2f2;
+}
+
+.conteudo article img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.conteudo section:last-of-type {
+  text-align: center;
+}
+
+.conteudo button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.conteudo button:hover {
+  background-color: #0056b3;
+}
+
+.conteudo footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+code{
+  text-align: start;
+}
+
+.conteudo ul {
+  padding: 25px;
+  text-align: start;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#profile img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#repo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#repo-list li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

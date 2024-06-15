@@ -15,7 +15,7 @@
     <h2>Programadora Iniciante</h2>
     <div class="contacts">
       <label for="">
-        <a href="">
+        <a href="https://www.linkedin.com/in/nicoli-persephone-alves-53350118a/">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
             viewBox="0 0 16 16">
             <path
@@ -26,7 +26,7 @@
       </label>
       <label for="">
 
-        <a href="">
+        <a href="https://www.instagram.com/niseph_/">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
             viewBox="0 0 16 16">
             <path
@@ -37,7 +37,7 @@
       </label>
       <label for="">
 
-        <a href="">
+        <a href="https://github.com/persephx">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
             viewBox="0 0 16 16">
             <path
@@ -69,7 +69,7 @@
       </a>
       <a href="./ciencia.html">
         <button>
-          Ciencia de dados
+          Ciência de dados
         </button>
       </a>
       <a href="./web.html">
@@ -84,17 +84,122 @@
       </a>
     </nav>
   </header>
-  <main class="informacoes">
+  <main class="conteudo">
+    <header>
+      <h1>Automação Industrial</h1>
+      <p>Documentação dos exercícios e projetos realizados na disciplina de Automação Industrial.</p>
+      <p>Utilizamos Arduino, Tinkercad e Wokwi para desenvolvimento e simulação de projetos.</p>
+    </header>
+
     <section>
-      <h3>Arduino
-      </h3>
-      <p>Tenho 18 anos, me chamo Nicoli e estou cursando Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo
-        Júnior. Atualmente, estou explorando o mundo da tecnologia não apenas na teoria, mas também na prática, atuando
-        como estagiária na 2RP Net, uma empresa especializada em data driving. Sou apaixonada pela tecnologia e
-        fascinada pela maneira como ela influencia nosso dia a dia, transformando a forma como vivemos, trabalhamos e
-        nos comunicamos. Estou sempre buscando aprender mais e contribuir para esse campo dinâmico e essencial.</p>
+      <article>
+        <h2>Contador Crescente e Decrescente com Arduino</h2>
+        <p>Desenvolvemos um contador que podia contar de forma crescente e decrescente utilizando botões e um display
+          de sete segmentos.</p>
+        <p>Os componentes utilizados incluíram Arduino Uno, display de sete segmentos, resistores, botões de pressão,
+          protoboard e fios de conexão.</p>
+      </article>
+
+      <article>
+        <h2>Semáforo com Arduino</h2>
+        <p>Desenvolvemos um sistema de semáforo utilizando LEDs para simular as luzes de trânsito, com controle de
+          tempo e lógica sequencial.</p>
+        <h3>Componentes Utilizados</h3>
+        <p>Arduino Uno, LEDs (vermelho, amarelo, verde), resistores, protoboard e fios de conexão.</p>
+        <h3>Código</h3>
+        <p>Implementamos o controle do semáforo com temporizações diferentes para cada LED, simulando um ciclo real de
+          semáforo (verde -> amarelo -> vermelho).</p>
+      </article>
+
+      <article>
+        <h2>Avaliação com Wokwi</h2>
+        <p>Para a avaliação final, utilizamos a plataforma Wokwi para simular um projeto mais complexo que integrava
+          as funcionalidades dos exercícios anteriores.</p>
+        <p>Este projeto exigiu a sincronização de um contador com o semáforo, demonstrando a compreensão de conceitos
+          como temporização e interrupções.</p>
+      </article>
+
+      <article>
+        <h2>Conclusão</h2>
+        <p>Através dos exercícios com Arduino e das plataformas Tinkercad e Wokwi, adquirimos uma experiência prática
+          valiosa para a compreensão dos conceitos de automação industrial.</p>
+        <p>Os projetos permitiram aplicar teorias aprendidas em sala de aula, desenvolver habilidades de programação e
+          eletrônica, e resolver problemas reais de automação.</p>
+      </article>
     </section>
+
+    <section>
+      <article>
+        <h2>Código do Contador Crescente e Decrescente</h2>
+        <p>
+          <code>
+                    int buttonUp = 2;<br>
+                    int buttonDown = 3;<br>
+                    int count = 0;<br>
+                    int segmentPins[] = {4, 5, 6, 7, 8, 9, 10};<br>
+                    <br>
+                    void setup() {<br>
+                        for (int i = 0; i < 7; i++) {<br>
+                            pinMode(segmentPins[i], OUTPUT);<br>
+                        }<br>
+                        pinMode(buttonUp, INPUT);<br>
+                        pinMode(buttonDown, INPUT);<br>
+                    }<br>
+                    <br>
+                    void loop() {<br>
+                        if (digitalRead(buttonUp) == HIGH) {<br>
+                            count++;<br>
+                            displayNumber(count);<br>
+                            delay(200);<br>
+                        }<br>
+                        if (digitalRead(buttonDown) == HIGH) {<br>
+                            count--;<br>
+                            displayNumber(count);<br>
+                            delay(200);<br>
+                        }<br>
+                    }<br>
+                    <br>
+                    void displayNumber(int num) {<br>
+                        // Código para exibir o número no display de sete segmentos<br>
+                    }
+                </code>
+        </p>
+      </article>
+
+      <article>
+        <h2>Código do Semáforo</h2>
+        <code>
+                    int ledRed = 13;<br>
+                    int ledYellow = 12;<br>
+                    int ledGreen = 11;<br>
+                    <br>
+                    void setup() {<br>
+                        pinMode(ledRed, OUTPUT);<br>
+                        pinMode(ledYellow, OUTPUT);<br>
+                        pinMode(ledGreen, OUTPUT);<br>
+                    }<br>
+                    <br>
+                    void loop() {<br>
+                        digitalWrite(ledGreen, HIGH);<br>
+                        delay(5000); // Verde por 5 segundos<br>
+                        digitalWrite(ledGreen, LOW);<br>
+                        <br>
+                        digitalWrite(ledYellow, HIGH);<br>
+                        delay(2000); // Amarelo por 2 segundos<br>
+                        digitalWrite(ledYellow, LOW);<br>
+                        <br>
+                        digitalWrite(ledRed, HIGH);<br>
+                        delay(5000); // Vermelho por 5 segundos<br>
+                        digitalWrite(ledRed, LOW);<br>
+                    }
+                </code>
+      </article>
+    </section>
+    <footer>
+      <button onclick="irAoTopo()">Voltar ao topo</button>
+    </footer>
   </main>
+  <script src="./script.js" />
 </body>
 
 </html>

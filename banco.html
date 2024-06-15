@@ -15,7 +15,7 @@
     <h2>Programadora Iniciante</h2>
     <div class="contacts">
       <label for="">
-        <a href="">
+        <a href="https://www.linkedin.com/in/nicoli-persephone-alves-53350118a/">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
             viewBox="0 0 16 16">
             <path
@@ -26,7 +26,7 @@
       </label>
       <label for="">
 
-        <a href="">
+        <a href="https://www.instagram.com/niseph_/">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
             viewBox="0 0 16 16">
             <path
@@ -37,7 +37,7 @@
       </label>
       <label for="">
 
-        <a href="">
+        <a href="https://github.com/persephx">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
             viewBox="0 0 16 16">
             <path
@@ -69,7 +69,7 @@
       </a>
       <a href="./ciencia.html">
         <button>
-          Ciencia de dados
+          Ciência de dados
         </button>
       </a>
       <a href="./web.html">
@@ -84,9 +84,147 @@
       </a>
     </nav>
   </header>
-  <main class="informacoes">
-Banco
+  <main class="conteudo">
+    <header>
+      <h1>Banco de Dados</h1>
+      <p>Essa sessão documenta as atividades e projetos realizados na disciplina de Banco de Dados, abordando desde
+        conceitos básicos até a implementação prática em diferentes sistemas de banco de dados.</p>
+      <p>Durante o curso, exploramos conceitos fundamentais de dados, técnicas de modelagem, tipos de armazenamento e
+        diferentes paradigmas de bancos de dados, tanto relacionais quanto NoSQL.</p>
+    </header>
+
+    <section>
+      <article>
+        <h2>Introdução</h2>
+        <p>No início do curso, discutimos a diferença entre dados e modelagem de dados. Entendemos que dados são fatos
+          brutos e não processados, enquanto a modelagem de dados é uma técnica para organizar esses dados de maneira
+          estruturada e lógica, facilitando o armazenamento, acesso e manipulação em sistemas de informação.</p>
+      </article>
+
+      <article>
+        <h2>Dados vs Modelagem de Dados</h2>
+        <p>Aprendemos que dados são unidades de informação que podem ser observadas e registradas. Porém, para
+          transformar esses dados em informações úteis, é necessário organizá-los de maneira lógica. A modelagem de
+          dados é a técnica que utilizamos para criar representações abstratas dos dados, que guiam a estruturação e o
+          design de bancos de dados.</p>
+      </article>
+
+      <article>
+        <h2>Estrutura de Dados</h2>
+        <p>Estudamos a estrutura interna dos dados e como eles são organizados nos sistemas de banco de dados. Isso
+          inclui a forma como os dados são armazenados em disco, a estrutura de índices para melhorar a performance de
+          consultas e as técnicas de particionamento para gerenciar grandes volumes de dados de maneira eficiente.</p>
+      </article>
+
+      <article>
+        <h2>Modelos de Modelagem de Dados</h2>
+        <h3>Modelo Conceitual</h3>
+        <p>O modelo conceitual de dados é uma representação abstrata de como os dados são organizados. Utilizamos
+          diagramas de entidade-relacionamento (ER) para mapear entidades, atributos e relacionamentos. Este modelo é
+          independente do sistema de gerenciamento de banco de dados (SGBD) e serve como uma base para o desenvolvimento
+          posterior de modelos lógicos e físicos.</p>
+        <h3>Modelo Lógico</h3>
+        <p>Transformamos o modelo conceitual em um modelo lógico, detalhando as tabelas, colunas e relações de um banco
+          de dados relacional. Esta etapa envolve a definição de chaves primárias e estrangeiras, normalização dos dados
+          e a preparação para a implementação física. O modelo lógico ainda é independente da tecnologia de
+          armazenamento, mas está mais próximo da estrutura que será usada no SGBD.</p>
+        <h3>Modelo Físico</h3>
+        <p>No modelo físico, implementamos o modelo lógico em um SGBD específico. Este modelo define a estrutura exata
+          das tabelas no banco de dados, incluindo tipos de dados, índices e partições. Também considera aspectos de
+          desempenho, como otimização de consultas e armazenamento eficiente dos dados.</p>
+      </article>
+
+      <article>
+        <h2>Tipos de Armazenamento</h2>
+        <p>Exploramos diferentes tipos de armazenamento de dados, incluindo bancos de dados relacionais e não
+          relacionais (NoSQL). Cada tipo tem suas vantagens e desvantagens, dependendo dos requisitos de aplicação, como
+          integridade dos dados, performance, escalabilidade e flexibilidade.</p>
+        <p>Bancos de dados relacionais utilizam tabelas e SQL para gerenciar dados estruturados, enquanto bancos de
+          dados NoSQL oferecem uma variedade de modelos de dados (documentos, grafos, colunas e chave-valor) para
+          atender a diferentes necessidades de aplicações modernas.</p>
+      </article>
+
+      <article>
+        <h2>Banco de Dados Relacionais</h2>
+        <p>Estudamos bancos de dados relacionais, focando no uso do modelo entidade-relacionamento (ER) para modelagem
+          de dados e na implementação de modelos físicos. Aprendemos sobre chaves primárias e estrangeiras, normalização
+          e desnormalização, e técnicas para otimizar a performance de consultas SQL.</p>
+        <p>Os bancos de dados relacionais são amplamente utilizados devido à sua capacidade de garantir a integridade
+          dos dados e realizar transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade).</p>
+      </article>
+
+      <article>
+        <h2>Modelo Entidade-Relacionamento (ER)</h2>
+        <p>Utilizamos o modelo ER para criar diagramas que representam entidades e seus relacionamentos. Estes diagramas
+          ajudam a visualizar e projetar a estrutura do banco de dados, identificando entidades, atributos, chaves
+          primárias e relacionamentos (um para um, um para muitos, muitos para muitos).</p>
+        <p>O modelo ER é uma ferramenta crucial no design de bancos de dados relacionais, proporcionando uma visão clara
+          de como os dados se inter-relacionam.</p>
+      </article>
+
+      <article>
+        <h2>Modelo Físico (Baixo Nível)</h2>
+        <p>Implementamos o modelo físico no banco de dados, detalhando a estrutura de tabelas, índices e otimizações de
+          desempenho. Esta fase inclui a criação de tabelas, definição de tipos de dados apropriados para cada coluna, e
+          implementação de restrições para garantir a integridade dos dados.</p>
+        <p>Também abordamos a importância de índices para melhorar a performance de consultas e técnicas de
+          particionamento para gerenciar grandes volumes de dados.</p>
+      </article>
+
+      <article>
+        <h2>Normalização</h2>
+        <p>Aprendemos sobre a normalização de dados, uma técnica para eliminar redundâncias e garantir a integridade dos
+          dados em um banco de dados relacional. A normalização envolve a divisão de grandes tabelas em tabelas menores
+          e a definição de relacionamentos entre elas para minimizar a redundância e dependências anômalas.</p>
+        <p>Estudamos as diferentes formas normais (1FN, 2FN, 3FN, BCNF) e como aplicá-las para criar uma estrutura de
+          banco de dados eficiente e consistente.</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Arquivos de Aula</h2>
+        <p>Os arquivos das aulas incluíram scripts SQL, exemplos de modelagem de dados e estudos de caso práticos. Esses
+          recursos foram fundamentais para entender e aplicar os conceitos aprendidos, permitindo a prática de criação,
+          manipulação e consulta de bancos de dados.</p>
+      </article>
+
+      <article>
+        <h2>Banco de Dados NoSQL</h2>
+        <p>Exploramos os conceitos e tipos de bancos de dados NoSQL, uma alternativa aos bancos de dados relacionais que
+          oferece flexibilidade e escalabilidade para aplicações modernas. Aprendemos que os bancos de dados NoSQL são
+          ideais para grandes volumes de dados não estruturados e para aplicações que requerem alta performance e
+          disponibilidade.</p>
+        <h3>Conceitos</h3>
+        <p>Os bancos de dados NoSQL são projetados para lidar com grandes quantidades de dados e operações de
+          leitura/escrita rápidas. Eles oferecem modelos de dados flexíveis e são capazes de escalar horizontalmente, o
+          que é essencial para aplicações web e móveis.</p>
+        <h3>Tipos de Bancos de Dados NoSQL</h3>
+        <p>Estudamos os quatro principais tipos de bancos de dados NoSQL:</p>
+        <ul>
+          <li><strong>Document Stores:</strong> Armazenam dados como documentos JSON ou BSON (e.g., MongoDB).</li>
+          <li><strong>Key-Value Stores:</strong> Armazenam dados como pares chave-valor (e.g., Redis).</li>
+          <li><strong>Column Stores:</strong> Armazenam dados em colunas em vez de linhas (e.g., Apache Cassandra).</li>
+          <li><strong>Graph Databases:</strong> Armazenam dados em grafos, enfatizando as relações entre os dados (e.g.,
+            Neo4j).</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Atlas MongoDB</h2>
+        <p>Utilizamos o Atlas MongoDB para explorar um banco de dados NoSQL na prática. Atlas MongoDB é uma plataforma
+          de banco de dados como serviço (DBaaS) que facilita a implantação, operação e escalabilidade de MongoDB na
+          nuvem.</p>
+        <p>Aprendemos como criar clusters, importar dados e executar consultas utilizando a interface web intuitiva do
+          Atlas. Esta experiência prática nos permitiu compreender melhor como os bancos de dados NoSQL podem ser usados
+          para resolver problemas de dados em aplicações reais.</p>
+      </article>
+    </section>
+    <footer>
+      <button onclick="irAoTopo()">Voltar ao topo</button>
+    </footer>
   </main>
+  <script src="./script.js" />
 </body>
 
 </html>
