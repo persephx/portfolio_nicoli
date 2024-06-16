@@ -87,7 +87,7 @@
   <main class="conteudo">
     <header>
       <h1>Automação Industrial</h1>
-      <p>Documentação dos exercícios e projetos realizados na disciplina de Automação Industrial.</p>
+      <p>Exercícios e projetos realizados na disciplina de Automação Industrial.</p>
       <p>Utilizamos Arduino, Tinkercad e Wokwi para desenvolvimento e simulação de projetos.</p>
     </header>
 
@@ -98,40 +98,8 @@
           de sete segmentos.</p>
         <p>Os componentes utilizados incluíram Arduino Uno, display de sete segmentos, resistores, botões de pressão,
           protoboard e fios de conexão.</p>
-      </article>
-
-      <article>
-        <h2>Semáforo com Arduino</h2>
-        <p>Desenvolvemos um sistema de semáforo utilizando LEDs para simular as luzes de trânsito, com controle de
-          tempo e lógica sequencial.</p>
-        <h3>Componentes Utilizados</h3>
-        <p>Arduino Uno, LEDs (vermelho, amarelo, verde), resistores, protoboard e fios de conexão.</p>
-        <h3>Código</h3>
-        <p>Implementamos o controle do semáforo com temporizações diferentes para cada LED, simulando um ciclo real de
-          semáforo (verde -> amarelo -> vermelho).</p>
-      </article>
-
-      <article>
-        <h2>Avaliação com Wokwi</h2>
-        <p>Para a avaliação final, utilizamos a plataforma Wokwi para simular um projeto mais complexo que integrava
-          as funcionalidades dos exercícios anteriores.</p>
-        <p>Este projeto exigiu a sincronização de um contador com o semáforo, demonstrando a compreensão de conceitos
-          como temporização e interrupções.</p>
-      </article>
-
-      <article>
-        <h2>Conclusão</h2>
-        <p>Através dos exercícios com Arduino e das plataformas Tinkercad e Wokwi, adquirimos uma experiência prática
-          valiosa para a compreensão dos conceitos de automação industrial.</p>
-        <p>Os projetos permitiram aplicar teorias aprendidas em sala de aula, desenvolver habilidades de programação e
-          eletrônica, e resolver problemas reais de automação.</p>
-      </article>
-    </section>
-
-    <section>
-      <article>
         <h2>Código do Contador Crescente e Decrescente</h2>
-        <p>
+        <p style="text-align: start;">
           <code>
                     int buttonUp = 2;<br>
                     int buttonDown = 3;<br>
@@ -167,33 +135,52 @@
       </article>
 
       <article>
-        <h2>Código do Semáforo</h2>
+        <h2>Semáforo com Arduino</h2>
+        <p>Desenvolvemos um sistema de semáforo utilizando LEDs para simular as luzes de trânsito, com controle de
+          tempo e lógica sequencial.</p>
+        <h3>Componentes Utilizados</h3>
+        <p>Arduino Uno, LEDs (vermelho, amarelo, verde), resistores, protoboard e fios de conexão.</p>
+        <h3>Código</h3>
+        <p>Implementamos o controle do semáforo com temporizações diferentes para cada LED, simulando um ciclo real de
+          semáforo (verde -> amarelo -> vermelho).</p>
+        <p style="text-align: start;">
         <code>
-                    int ledRed = 13;<br>
-                    int ledYellow = 12;<br>
-                    int ledGreen = 11;<br>
-                    <br>
-                    void setup() {<br>
-                        pinMode(ledRed, OUTPUT);<br>
-                        pinMode(ledYellow, OUTPUT);<br>
-                        pinMode(ledGreen, OUTPUT);<br>
-                    }<br>
-                    <br>
-                    void loop() {<br>
-                        digitalWrite(ledGreen, HIGH);<br>
-                        delay(5000); // Verde por 5 segundos<br>
-                        digitalWrite(ledGreen, LOW);<br>
+                        int ledRed = 13;<br>
+                        int ledYellow = 12;<br>
+                        int ledGreen = 11;<br>
                         <br>
-                        digitalWrite(ledYellow, HIGH);<br>
-                        delay(2000); // Amarelo por 2 segundos<br>
-                        digitalWrite(ledYellow, LOW);<br>
+                        void setup() {<br>
+                            pinMode(ledRed, OUTPUT);<br>
+                            pinMode(ledYellow, OUTPUT);<br>
+                            pinMode(ledGreen, OUTPUT);<br>
+                        }<br>
                         <br>
-                        digitalWrite(ledRed, HIGH);<br>
-                        delay(5000); // Vermelho por 5 segundos<br>
-                        digitalWrite(ledRed, LOW);<br>
-                    }
-                </code>
+                        void loop() {<br>
+                            digitalWrite(ledGreen, HIGH);<br>
+                            delay(5000); // Verde por 5 segundos<br>
+                            digitalWrite(ledGreen, LOW);<br>
+                            <br>
+                            digitalWrite(ledYellow, HIGH);<br>
+                            delay(2000); // Amarelo por 2 segundos<br>
+                            digitalWrite(ledYellow, LOW);<br>
+                            <br>
+                            digitalWrite(ledRed, HIGH);<br>
+                            delay(5000); // Vermelho por 5 segundos<br>
+                            digitalWrite(ledRed, LOW);<br>
+                        }
+                    </code>
+        </p>
       </article>
+
+      <article>
+        <h2>Avaliação com Wokwi</h2>
+        <p>Para a avaliação final, utilizamos a plataforma Wokwi para simular um projeto mais complexo que integrava
+          as funcionalidades dos exercícios anteriores.</p>
+        <p>Este projeto exigiu a sincronização de um contador com o semáforo, demonstrando a compreensão de conceitos
+          como temporização e interrupções.</p>
+        <img src="https://br.mouser.com/images/suppliers/logos/wokwi.png" alt="" />
+      </article>
+      
     </section>
     <footer>
       <button onclick="irAoTopo()">Voltar ao topo</button>
